@@ -71,3 +71,34 @@ export default defineConfig([
   },
 ])
 ```
+# ToDo Calendar App
+
+Bun + Vite + React + TypeScriptで作成したToDo管理アプリです。
+
+## 機能
+
+- タスクの追加
+- Enterキーで追加
+- 完了・未完了の切り替え
+- タスクの編集
+- タスクの削除
+- localStorageによる保存
+- 期限日の設定
+- カレンダー表示
+- 完了済み・未完了フィルター
+- 残りタスク数の表示
+
+## 使用技術
+
+- Bun
+- Vite
+- React
+- TypeScript
+- CSS
+- localStorage
+
+## 実行方法
+
+```bash
+bun install
+bun run dev
