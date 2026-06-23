@@ -1,0 +1,181 @@
+.app {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-area input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+}
+
+.input-area button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.view-area,
+.filter-area {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.view-area button,
+.filter-area button {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.active-filter {
+  background-color: #333 !important;
+  color: white;
+}
+
+.count-text {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.todo-list span {
+  cursor: pointer;
+  text-align: left;
+}
+
+.todo-list small {
+  display: block;
+  color: #777;
+  margin-top: 4px;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.button-area {
+  display: flex;
+  gap: 6px;
+}
+
+.button-area button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.edit-area {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.edit-area input[type="text"] {
+  flex: 1;
+}
+
+.edit-area input {
+  padding: 6px;
+  font-size: 15px;
+}
+
+.edit-area button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.calendar-area {
+  margin-top: 24px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.calendar-header button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.calendar-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendar-cell {
+  min-height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+.calendar-cell.empty {
+  background-color: transparent;
+  border: none;
+}
+
+.calendar-date {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.calendar-todo {
+  font-size: 12px;
+  background-color: #e8f0ff;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.calendar-todo.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: #eee;
+}
